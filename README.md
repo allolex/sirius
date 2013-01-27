@@ -16,6 +16,8 @@ The goal is to take some of the things I've learnt from working on [Hermes](http
 
 If you'd like to see more about where Sirius is going and where it has been, have a look at [the gist](https://gist.github.com/4574164) containing my basic mutt configuration that started it all off.
 
+I'm also maintaining a [list of potential features](./potential_features.md) with notes.
+
 ## Dependencies
 
 - Homebrew
