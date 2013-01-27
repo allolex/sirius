@@ -1,0 +1,1 @@
+export MAILCONF="$HOME/.mutt"
