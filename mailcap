@@ -1,0 +1,10 @@
+application/ics; view_attachment %s -
+application/octet-stream; view_attachment %s -
+application/*; view_attachment %s -ext/*; less
+document/pdf; view_attachment %s -
+image/*; view_attachment %s -
+mime_lookup application/octet-stream
+text/html; elinks -dump %s ; copiousoutput
+text/plain; less %s ; copiousoutput
+text/x-markdown; view_attachment %s -
+video/*; view_attachment %s -
