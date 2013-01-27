@@ -10,7 +10,7 @@ My own configuration is Google-centric, but the configuration can be adapted to 
 
 I used mutt for many years after getting tired of elm. In 2008, I started using Google Apps for some parts of my work and due to lack of nice support for IMAP and lack of time to work on a good configuration, I started using Google's web client. When we stopped using our own Cyrus IMAP servers entirely a few years later, I stopped using mutt (nearly) altogether.
 
-The goal is to take some of the things I've learnt from working on [Hermes][https://github.com/New-Bamboo/Hermes] and apply them to a mutt configuration.
+The goal is to take some of the things I've learnt from working on [Hermes](https://github.com/New-Bamboo/Hermes) and apply them to a mutt configuration.
 
 ## Looking forward
 
