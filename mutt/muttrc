@@ -1,0 +1,4 @@
+# Mailcap / MIME
+set mailcap_path=~/.mailcap
+
+source $MAILCONF/$MUTT_INSTANCE/muttrc
