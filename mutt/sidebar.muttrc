@@ -1,0 +1,20 @@
+# Sidebar
+
+# I don't use the sidebar, but you might want to
+set sidebar_visible = no
+
+set sidebar_delim   = '  │'
+set sidebar_width   = 48
+
+# ctrl-n, ctrl-p to select next, prev folder
+# ctrl-o to open selected folder
+bind index \cP sidebar-prev
+bind index \cN sidebar-next
+bind index \cO sidebar-open
+bind pager \cP sidebar-prev
+bind pager \cN sidebar-next
+bind pager \cO sidebar-open
+
+# [ toggles sidebar visibility
+macro index 0 '<enter-command>toggle sidebar_visible<enter>'
+macro pager 0 '<enter-command>toggle sidebar_visible<enter>'
