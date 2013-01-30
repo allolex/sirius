@@ -1,0 +1,12 @@
+# Get settings for Google Mail accounts
+source $MAILCONF/gmail_common.muttrc
+
+# Custom settings for this account
+set imap_user  =  "you@yourdomain.example.com"
+set smtp_url   =  "smtp://you@yourdomain.example.com@smtp.gmail.com:587/"
+## Add keys to your keychain so these lookups succeed
+set imap_pass  =  `keychain_password yourdomain_gmail_mutt`
+set smtp_pass  =  `keychain_password yourdomain_gmail_mutt`
+set from       =  "you@yourdomain.example.com"
+set realname   =  "Your Name"
+set hostname   =  "yourdomain.example.com"

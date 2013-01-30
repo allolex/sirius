@@ -1,0 +1,27 @@
+# Gmail common configuration
+
+
+## General settings
+set imap_check_subscribed
+set imap_keepalive  =  300
+set timeout         =  300
+set signature       =  "$MAILCONF/accounts/$MUTT_INSTANCE/signature"
+
+## Set locations
+set folder     =  "imaps://imap.gmail.com:993"
+set spoolfile  =  "+INBOX"
+set postponed  =  "+[GMail]/Drafts"
+set record     =  "+[GMail]/Sent Mail"
+set mbox       =  "=[Gmail]/All Mail"
+
+## Check these for new mail
+mailboxes "imaps://imap.gmail.com:993/[Gmail]/INBOX"
+
+## Caches
+set header_cache     = "$MAILCONF/accounts/$MUTT_INSTANCE/cache/headers"
+set message_cachedir = "$MAILCONF/accounts/$MUTT_INSTANCE/cache/bodies"
+set certificate_file = "$MAILCONF/accounts/$MUTT_INSTANCE/certificates"
+
+## Macros
+macro index ,s "<save-message>\><enter>"
+macro index ,j "<save-message>=[GMail]/Spam<enter>"
