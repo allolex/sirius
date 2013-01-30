@@ -1,6 +1,9 @@
 # Mailcap / MIME
 set mailcap_path=~/.mailcap
 
+# Easier search
+macro index \eb '/~b ' 'search inside message bodies'
+
 # External programs
 macro index \cb |urlview\n 'navigate links with urlview'
 macro pager \cb |urlview\n 'navigate links with urlview'
