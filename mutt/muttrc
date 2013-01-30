@@ -3,4 +3,5 @@ set mailcap_path=~/.mailcap
 
 source $MAILCONF/colours.muttrc
 source $MAILCONF/macros.muttrc
+source $MAILCONF/personal.muttrc
 source $MAILCONF/accounts/$MUTT_INSTANCE/muttrc
