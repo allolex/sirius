@@ -1,0 +1,41 @@
+# Colours
+
+## General
+color hdrdefault        brightwhite     black     # Default headers
+color normal            white           black     # Index screen
+color indicator         brightyellow    red       # Actual message
+color tree              red             black     # Tree
+color status            black           yellow    # State
+color error             brightyellow    brightred # Error
+color signature         brightblue      black     # Signature
+color attachment        brightyellow    blue      # MIME attachments
+color search            brightyellow    red       # Search
+color tilde             brightgreen     black     # Tildes at the end
+color bold              brightblue      black     # Bold text
+color underline         brightgreen     black     # Underlined text
+color quoted            cyan            black     # Quoted text
+
+## Message headers
+color header            brightred       black   ^(From|Cc|Reply-To):
+color header            brightyellow    black   ^(Date|Subject):
+color header            brightwhite     black   ^(To|In-Reply-To|Mail-Followup-To):
+color header            brightgreen     black   .*-Agent:
+color header            brightblue      black   ^X-.*:
+
+## BODY TEXT
+color body              brightcyan      black   "(^| )_[p\.d\.]:.*[a-z]+[0-9]"
+color body              brightred       black   "(\")"
+color body              brightred       black   "~"
+color body              brightyellow    black   "(ftp|http|https|file|mailto|finger|news)://[^ ]+"      # URLs
+color body              brightcyan      black   "[-a-z_0-9.]+@[-a-z_0-9.]+"                             # e-mail addresses
+
+## MESSAGE INDEX (The order is relevant)
+color index             cyan            black   ~A # All messages
+color index             brightwhite     black   ~p # Addressed to me
+color index             blue            black   ~S # Superseded
+color index             green           black   ~Q # Replied to
+color index             yellow          black   ~F # Flagged
+color index             brightgreen     black   ~U # Unread
+color index             brightyellow    black   ~N # New
+color index             red             black   ~T # Tagged
+color index             white           black   ~D # Deleted
