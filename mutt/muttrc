@@ -1,6 +1,9 @@
 # Mailcap / MIME
 set mailcap_path=~/.mailcap
 
+# External programs
+macro index \cb |urlview\n 'navigate links with urlview'
+macro pager \cb |urlview\n 'navigate links with urlview'
 source $MAILCONF/colours.muttrc
 source $MAILCONF/macros.muttrc
 source $MAILCONF/sidebar.muttrc
