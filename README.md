@@ -46,7 +46,9 @@ You'll want to look at `mutt_aliases.bash` in bashrc.d and modify it to reflect 
 #### Sirius
 
 - Clone the Sirius repository to `$HOME/.sirius`.
-- Symlink $HOME/.sirius/mutt to `$HOME/.mutt`.
+- Symlink `$HOME/.sirius/mailcap` to `$HOME/.mailcap`.
+- Symlink `$HOME/.sirius/mime.types` to `$HOME/.mime.types`.
+- Symlink `$HOME/.sirius/mutt` to `$HOME/.mutt`.
 - Add the files in `$HOME/.sirius/bashrc.d/` to `$HOME/.bashrc.d/` and make sure they are sourced when you open a shell.
 - Move `$HOME/.mutt/accounts/default` to a new directory inside `$HOME/.mutt/accounts/`, e.g. `personal/` and add your account details to the `muttrc` inside it.
 - Symlink that account directory to `default` since `$MUTT_INSTANCE` relies on `default/` being present.
