@@ -33,6 +33,26 @@ Basically, you should fork this repo and clone your copy to `$HOME/.sirius`. The
 
 You'll want to look at `mutt_aliases.bash` in bashrc.d and modify it to reflect your mail accounts. It's possible to load different configurations for mail while inside mutt, but for simplicity's sake, the Sirius configuration encourages you to define aliases for each instance.
 
+### Installation steps
+
+#### Dependencies
+
+- Install Homebrew
+- brew install elinks
+- brew install urlview
+- brew install vim --with-perl --with-ruby
+- brew install mutt --with-sidebar-patch
+
+#### Sirius
+
+- Clone the Sirius repository to `$HOME/.sirius`.
+- Symlink $HOME/.sirius/mutt to `$HOME/.mutt`.
+- Add the files in `$HOME/.sirius/bashrc.d/` to `$HOME/.bashrc.d/` and make sure they are sourced when you open a shell.
+- Move `$HOME/.mutt/accounts/default` to a new directory inside `$HOME/.mutt/accounts/`, e.g. `personal/` and add your account details to the `muttrc` inside it.
+- Symlink that account directory to `default` since $MUTT_INSTANCE relies on `default/` being present.
+- Edit `$HOME/.bashrc.d/mutt_aliases.bash` and add an alias for your new account, e.g. `mutt-personal` or `work_mail`. Make sure `$MUTT_INSTANCE` is set to the same directory name you renamed `default/` to.
+- Start mutt with the aliased command.
+
 
 ### Dependencies
 
