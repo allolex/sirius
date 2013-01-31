@@ -1,0 +1,45 @@
+# Set headers
+ignore *
+unignore From To Cc Bcc Subject Date Reply-To Organization X-Mailer User-Agent
+hdr_order Date From To Cc
+
+## Viewing mail
+alternative_order text/plain text/html *
+auto_view text/html
+set smart_wrap
+
+
+# Sensible "defaults" (TODO: document)
+unset reply_self
+unset use_domain
+unset confirmappend
+unset pipe_decode
+set nomark_old
+set auto_tag        = yes
+set fast_reply
+set fcc_clear
+set forward_decrypt
+set gecos_mask      = "[^,]+"
+set include
+set mime_forward    = ask-yes
+set move            = no
+set postpone        = ask-yes
+set use_from        = yes
+
+## Index screen
+set mail_check      = 120
+set sort            = 'threads'
+set sort_aux        = 'reverse-last-date-received'
+set index_format    = "%4C | %Z | %{%d %b} | %-20.20L | %?M?#%03M&%4l? | %s"
+
+# Allow deletion in pager
+bind pager d delete-message
+
+# Consistent navigation
+bind pager \cd next-page
+bind pager \cu previous-page
+
+bind index n next-undeleted
+bind pager n next-undeleted
+bind index p previous-undeleted
+bind pager p previous-undeleted
