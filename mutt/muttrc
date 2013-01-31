@@ -14,6 +14,7 @@ macro index \co |elinks\n 'open with elinks'
 macro pager \co |elinks\n 'open with elinks'
 
 source $MAILCONF/editor.muttrc
+source $MAILCONF/contacts.muttrc
 source $MAILCONF/colours.muttrc
 source $MAILCONF/macros.muttrc
 source $MAILCONF/sidebar.muttrc

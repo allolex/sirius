@@ -1,0 +1,4 @@
+# Aliases and OS X Contacts
+set query_command='mutt_contacts'
+set alias_file=$MAILCONF/accounts/$MUTT_INSTANCE/aliases
+source $MAILCONF/accounts/$MUTT_INSTANCE/aliases
