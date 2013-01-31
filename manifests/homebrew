@@ -1,3 +1,4 @@
 mutt --with-sidebar-patch
+vim --with-perl --with-ruby
 elinks
 urlview

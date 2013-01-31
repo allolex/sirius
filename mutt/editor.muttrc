@@ -1,0 +1,17 @@
+# Editor behaviour
+
+set autoedit=yes
+set ispell="aspell -e -c"
+set sig_dashes
+
+## Make plain text mail linebreaks work for readers
+set text_flowed=yes
+
+## Make Vim work with flowed text and add spell checking
+set editor='vim "+setlocal spell spelllang=en_gb fo+=aw"'
+set visual='vim "+setlocal spell spelllang=en_gb fo+=aw"'
+
+bind editor <Tab> complete-query
+bind editor <space> noop
+bind editor ^T complete
+

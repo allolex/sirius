@@ -10,6 +10,7 @@ macro pager \cb |urlview\n 'navigate links with urlview'
 macro index \co |elinks\n 'open with elinks'
 macro pager \co |elinks\n 'open with elinks'
 
+source $MAILCONF/editor.muttrc
 source $MAILCONF/colours.muttrc
 source $MAILCONF/macros.muttrc
 source $MAILCONF/sidebar.muttrc
