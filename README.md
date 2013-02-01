@@ -1,6 +1,6 @@
 # Sirius
 
-Sirius - A sensible default configuration for the mutt email client on OS X
+Sirius - A somewhat opinionated default configuration for the mutt email client on OS X
 
 
 ## Summary
@@ -55,6 +55,11 @@ You'll want to look at `mutt_aliases.bash` in bashrc.d and modify it to reflect 
 - Edit `$HOME/.bashrc.d/mutt_aliases.bash` and add an alias for your new account, e.g. `mutt-personal` or `work_mail`. Make sure `$MUTT_INSTANCE` is set to the same directory name you renamed `default/` to.
 - Start mutt with the aliased command.
 
+#### Editor
+
+One of the obvious advantages to mutt is that you can use any editor with it.
+
+I live in the UK and use vim, so you might want to have a look at your `$HOME/.mutt/editor.muttrc` and change the editor and the default spelling language.
 
 ### Dependencies
 
