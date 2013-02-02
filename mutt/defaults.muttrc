@@ -14,6 +14,8 @@ unset reply_self
 unset use_domain
 unset confirmappend
 unset pipe_decode
+# Don't pause after executing shell commands, pipes etc.
+unset wait_key
 set nomark_old
 set auto_tag        = yes
 set fast_reply
