@@ -1,0 +1,1 @@
+export SIRIUS=$HOME/.sirius
