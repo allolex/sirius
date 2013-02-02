@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+# A quick hack to grab email from RFC-822 From: headers
+
+def ingest text
+  parts = text.split(/\s+/).map { |l| l.gsub(/[><]/,'') }.map {|l| '"' + l + '"' }
+  email = parts.last
+  first_name = '""'
+  last_name = '""'
+  organisation = '""'
+  if parts.count > 2
+    first_name = parts[0]
+    last_name = parts[-2]
+  elsif parts.count == 2
+    organisation = parts[0]
+  end
+  [first_name,last_name,organisation,email].join(' ')
+end
+
+ARGF.each do |line|
+  if line.gsub!(/^From: /i,'')
+    args = ingest(line)
+    puts "Adding contact with arguments: #{args}"
+    system "osascript #{ENV['SIRIUS']}/applescript/add_contact.applescript #{args}"
+  end
+end
+

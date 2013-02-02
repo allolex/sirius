@@ -2,3 +2,5 @@
 set query_command='mutt_contacts'
 set alias_file=$MAILCONF/accounts/$MUTT_INSTANCE/aliases
 source $MAILCONF/accounts/$MUTT_INSTANCE/aliases
+macro index ,a '<pipe-entry>$SIRIUS/bin/grab_sender<enter>' 
+macro pager ,a '<pipe-entry>$SIRIUS/bin/grab_sender<enter>' 
