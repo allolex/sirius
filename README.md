@@ -10,6 +10,18 @@ Sirius - A somewhat opinionated default configuration for the mutt email client 
 My own configuration is Google-centric, but the configuration can be adapted to any IMAP service.
 
 
+## Features
+
+All the rather amazing features of mutt, plus:
+
+- Easy Google Mail configuration that works for both Gmail and Apps.
+- OS X Contacts integrated:
+    - {^t} completion in to-fields.
+    - Easily add contacts from mutt by pressing {,a}.
+- Secure mail password storage in OS X keychain.
+- Knows what to do with most attachments via `view_attachments`, e.g. .ics files are opened in Calendar, image files are opened in Preview.
+- Browse URLs in email with `urlview`.
+
 ## About the project
 
 ### Background
@@ -59,7 +71,7 @@ You'll want to look at `mutt_aliases.bash` in bashrc.d and modify it to reflect 
 
 One of the obvious advantages to mutt is that you can use any editor with it.
 
-I live in the UK and use vim, so you might want to have a look at your `$HOME/.mutt/editor.muttrc` and change the editor and the default spelling language.
+I live in the UK and use vim, but you may not, so you might want to have a look at `$HOME/.mutt/editor.muttrc` and change the editor and the default spelling language.
 
 ### Dependencies
 
