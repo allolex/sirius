@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+$SIRIUS/bin/grab_urls | sort -ru | urlview

@@ -8,8 +8,8 @@ set mailcap_path=~/.mailcap
 macro index \eb '/~b ' 'search inside message bodies'
 
 # External programs
-macro index \cb |urlview\n 'navigate links with urlview'
-macro pager \cb |urlview\n 'navigate links with urlview'
+macro index \cb |$SIRIUS/bin/view_urls\n 'navigate links with urlview'
+macro pager \cb |$SIRIUS/bin/view_urls\n 'navigate links with urlview'
 macro index \co |elinks\n 'open with elinks'
 macro pager \co |elinks\n 'open with elinks'
 

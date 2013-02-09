@@ -1,0 +1,15 @@
+#!/usr/bin/env ruby
+
+def grab_url(text)
+  url_regex = %r!(?:http|https|ftp|ssh|sftp|mailto|git)(?://)?[^"\n\r\f ]+!iu
+  text.scan(url_regex)
+end
+
+def filter_images list
+  list.select { |u| not u.match('(gif|png|jpg)\Z') }
+end
+
+text = ARGF.read
+text.gsub!(/=[\r\n]/u,'')
+urls = grab_url(text)
+puts filter_images(urls).join("\n")
