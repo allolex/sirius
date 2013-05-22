@@ -17,7 +17,7 @@ Create the Sirius environment variable.
 
 Download Sirus from Github. (You might want to do this from your own fork.)
 
-    git clone https://github.com/allolex/sirius.git $SIRUS
+    git clone https://github.com/allolex/sirius.git $SIRIUS
 
 
 Back up your current dotfiles.
