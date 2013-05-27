@@ -1,6 +1,11 @@
 # Thanks
 
 
+## For code
+
+- [João Taveira Araújo](https://github.com/jta)
+
+
 ## For being interested
 
 - Claudio Ortolina
