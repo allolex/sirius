@@ -6,8 +6,8 @@ Install [Homebrew](http://mxcl.github.com/homebrew/) and the packages we need.
     ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
     brew install elinks
     brew install urlview
-    brew install vim --with-perl --with-ruby
-    brew install mutt --with-sidebar-patch
+    brew install neovim
+    brew install mutt
 
 
 Create the Sirius environment variable.
@@ -98,7 +98,7 @@ Should print your mutt configuration directory, e.g. `~/.mutt`.
 
 You can use your favourite editor.
 
-    vim $SIRIUS/accounts/personal/muttrc
+    nvim $SIRIUS/accounts/personal/muttrc
 
 By default, Sirius creates an alias for each account folder in `$MAILCONF/accounts`.
 If you created an account called `personal` a few steps back, you should be able to run an instance of mutt using that account by running `mutt-personal`.
