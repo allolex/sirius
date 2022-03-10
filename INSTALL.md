@@ -39,7 +39,10 @@ Finally, link the Sirius mailcap and mutt configurations to your home directory.
     
 The next step depends on you wanting an account called "personal". If you want to call your account something else, then make sure you change the name below.
 
-    cp -r $SIRIUS/mutt/accounts/default $SIRIUS/accounts/personal
+    export MUTT_ACCOUNT_PATH=$SIRIUS/accounts/personal
+    mkdir -p $MUTT_ACCOUNT_PATH
+    cp -r $SIRIUS/mutt/accounts/default/* ${MUTT_ACCOUNT_PATH}/
+
 
 
 ## Configure shell
