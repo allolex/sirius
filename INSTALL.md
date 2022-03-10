@@ -31,8 +31,9 @@ If you have an existing mutt configuration, make sure you move it out of the way
 
     mv ~/.muttrc $SIRIUS/backup/
     
-Finally, link the Sirius mutt configuration to your home directory.
+Finally, link the Sirius mailcap and mutt configurations to your home directory.
 
+    ln -sf $SIRIUS/mailcap ~/.mailcap
     ln -sf $SIRIUS/mutt ~/.mutt
     
     
