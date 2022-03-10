@@ -43,6 +43,11 @@ The next step depends on you wanting an account called "personal". If you want t
     mkdir -p $MUTT_ACCOUNT_PATH
     cp -r $SIRIUS/mutt/accounts/default/* ${MUTT_ACCOUNT_PATH}/
 
+The defaults are tuned to Gmail, so you may need to make some changes for these to work (well) with your email provider. Here are a few resources:
+
+- [Protonmail](https://brian-thompson.medium.com/setting-up-the-mutt-mail-client-with-protonmail-49c042486b3)
+- [Fastmail](https://gist.github.com/mike-burns/986fae26fd1fdb331b59)
+- [iCloud/Apple](https://forums.freebsd.org/threads/mutt-with-icloud-mail.44264/)
 
 
 ## Configure shell
@@ -114,3 +119,5 @@ For example, if for the account `work` you wish to use the command `work_mail`, 
 ## Start mutt
 
     mutt-personal
+
+Or `mutt-work` or `mutt-whatever` from account creation above.
